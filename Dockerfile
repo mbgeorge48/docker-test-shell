@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install zsh git curl gnupg -y
+RUN apt-get update && apt-get install zsh git curl gnupg vim -y
 RUN exec $SHELL
 RUN useradd -ms /bin/zsh mott
 USER mott
